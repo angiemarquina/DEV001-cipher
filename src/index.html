@@ -7,7 +7,25 @@
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+    <header>
+      <h1 class="tittle">Agencia secreta</h1>
+      <p class="welcome">¡Bienvenido espía!</p>
+    </header>
+    <main class="page">
+      <textarea id="text" placeholder="Ingresa tu mensaje" cols="40" rows="5"></textarea>
+      <br>
+      <input type="number" id="offSet" min="0" max="25">
+      <br>
+      <button id="cipher" class="btn">CIFRAR</button>
+      <br>
+      <textarea id="cipherText" placeholder="Visualiza aquí tu mensaje cifrado" cols="40" rows="5"></textarea>
+      <br>
+      <button id="decipher" class="btn">DESCIFRAR</button>
+      <br>
+      <textarea id="decipherText" placeholder="Visualiza aquí tu mensaje decifrado" cols="40" rows="5"></textarea>
+      <br>
+      <button id="clear" class="btn">LIMPIAR</button>
+    </main>
     </div>
     <script src="index.js" type="module"></script>
   </body>
