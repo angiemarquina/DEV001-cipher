@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+body{
+    background-color: #a4b8b7;
+}
+
+.tittle{
+    color: white;
+    font-family: Lyon-Text, Georgia, ui-serif, serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.welcome{ 
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+.page{
+    background-color: #f1e9e6;
+    border-radius: 20px;
+    padding: 50px;
+    margin: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    background-color: #81736a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 50;
+    padding: 5px;
+}
