@@ -9,6 +9,7 @@ cipherBtn.addEventListener("click",()=>{
 
 const decipherBtn = document.getElementById("decipher");
 decipherBtn.addEventListener("click",()=>{
+    //console.log("Hola, estamos aquí")
     const text = document.getElementById("text").value;
     const offSet = document.getElementById("offSet").value;
     document.getElementById("decipherText").innerHTML = cipher.decode(offSet,text);
