@@ -25,7 +25,7 @@ const cipher = {
         decodedText += String.fromCharCode(((originalText.charCodeAt(i) + 65 - parseInt(offSet) % 26) + 26) % 26 + 65); // de cifrado césar a texto original
       }
       else if (originalText.charCodeAt(i) === 32){
-        encodedText += " ";
+        decodedText += " ";
       }
     }
     //console.log(decodedText)
