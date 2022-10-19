@@ -2,30 +2,38 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Spy community</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-    <header>
-      <h1 class="tittle">Agencia secreta</h1>
-      <p class="welcome">¡Bienvenido espía!</p>
-    </header>
     <main class="page">
-      <textarea id="text" placeholder="Ingresa tu mensaje" cols="40" rows="5"></textarea>
-      <br>
+
+    <header>
+      <img class="spy" src="img/spy.gif" alt="imagen de un espía">
+      <h1 class="tittle">Agencia de espías</h1>
+    </header>
+    
+    <section class="message-box">
       <input type="number" id="offSet" min="0" max="25">
       <br>
-      <button id="cipher" class="btn">CIFRAR</button>
+      <textarea id="text" placeholder="Ingresa tu mensaje" cols="40" rows="5"></textarea>
+    </section>
+
+    <section class="cipher-box">
+      <button id="cipher" class="btn">Cifrar</button>
       <br>
       <textarea id="cipherText" placeholder="Visualiza aquí tu mensaje cifrado" cols="40" rows="5"></textarea>
-      <br>
-      <button id="decipher" class="btn">DESCIFRAR</button>
+    </section>
+
+    <section class="decipher-box">
+      <button id="decipher" class="btn">Descifrar</button>
       <br>
       <textarea id="decipherText" placeholder="Visualiza aquí tu mensaje decifrado" cols="40" rows="5"></textarea>
-      <br>
-      <button id="clear" class="btn">LIMPIAR</button>
+    </section>
+      
     </main>
+
     </div>
     <script src="index.js" type="module"></script>
   </body>

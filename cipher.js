@@ -22,13 +22,12 @@ const cipher = {
     //console.log("Estamos aquí")
     for (let i = 0; i < originalText.length; i++) {
       if(originalText.charCodeAt(i) >= 65 && originalText.charCodeAt(i) <= 90) {
-        decodedText += String.fromCharCode(((originalText.charCodeAt(i) - 65 - parseInt(offSet) % 26) + 26) % 26 + 65); // de cifrado césar a texto original
+        decodedText += String.fromCharCode(((originalText.charCodeAt(i) + 65 - parseInt(offSet) % 26) + 26) % 26 + 65); // de cifrado césar a texto original
       }
     }
     //console.log(decodedText)
     return decodedText; 
   }
 }
-
 
 export default cipher;
